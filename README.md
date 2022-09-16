@@ -2,15 +2,9 @@
 Asteroid Radar is an app that showcases how close are the closest asteroids to Earth. The app uses the NASA API for the list of asterods.
 This  is a project for the Udacity Android kotlin Nanodegree Program.
 
-## Features
-- MVVM Architecture
-- ViewModel
-- Room
-- LiveData
-- Data Binding
-- Navigation
 
-## Libraries
+## Technologies
+- MVVM Architecture
 - RecyclerView
 - Navigation Component
 - ViewModel
