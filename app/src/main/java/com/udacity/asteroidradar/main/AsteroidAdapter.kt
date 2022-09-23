@@ -19,7 +19,7 @@ class AsteroidAdapter(private val clickListener: OnClickListener) :
         val asteroid = getItem(position)
 
         holder.also {
-            it.itemView.setOnClickListener{
+            it.itemView.setOnClickListener {
                 clickListener.onClick(asteroid)
             }
             it.bind(asteroid)
@@ -41,6 +41,8 @@ class AsteroidAdapter(private val clickListener: OnClickListener) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(asteroid: Asteroid) {
             binding.asteroid = asteroid
+            binding.asteroidStatusImg.contentDescription =
+                if (asteroid.isPotentiallyHazardous) "Hazardous" else "Safe"
             binding.executePendingBindings()
         }
     }
